@@ -1,0 +1,70 @@
+{
+  "name": "bunny-presigned-urls",
+  "version": "0.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Presigned URLs via Edge Scripting for bunny.net 🐰",
+  "keywords": [
+    "BunnyCDN",
+    "bunny.net",
+    "bunny",
+    "cdn",
+    "bunny-launcher",
+    "typescript",
+    "edge-scripting",
+    "edge",
+    "scripting",
+    "presigned-urls",
+    "presigned",
+    "urls",
+    "upload"
+  ],
+  "homepage": "https://bunny-launcher.net/edge-scripting/presigned-urls/",
+  "bugs": "https://github.com/jlarmstrongiv/bunny-presigned-urls/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlarmstrongiv/bunny-presigned-urls.git"
+  },
+  "license": "AGPL-3.0-only",
+  "author": "John L. Armstrong IV",
+  "sideEffects": false,
+  "scripts": {
+    "build:dev": "NODE_ENV=development npx tsx src/bundler",
+    "build": "npx tsx src/bundler",
+    "prepublishOnly": "npm run build",
+    "pretest:deno": "npm run build:dev",
+    "pretest:node": "npm run build:dev",
+    "test:deno": "deno run src/test/index.test.ts",
+    "test:node": "npx tsx src/test/index.test.ts"
+  },
+  "main": "dist/index.js",
+  "bin": {
+    "bunny-presigned-urls": "key.js"
+  },
+  "files": [
+    "dist",
+    "key.js"
+  ],
+  "devDependencies": {
+    "@lukeed/ms": "2.0.2",
+    "@tsconfig/node20": "20.1.4",
+    "@types/bytes": "3.1.4",
+    "@types/fs-extra": "11.0.4",
+    "@types/node": "22.5.4",
+    "@types/uuid": "10.0.0",
+    "bunny-sdk": "0.0.28",
+    "bytes": "3.1.2",
+    "dts-bundle-generator": "9.5.1",
+    "esbuild": "0.24.0",
+    "fs-extra": "11.2.0",
+    "hash-wasm": "4.11.0",
+    "http-status-codes": "2.3.0",
+    "tsx": "4.19.1",
+    "typescript": "5.5.4",
+    "uuid": "10.0.0"
+  },
+  "packageManager": "npm@10.9.0",
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "lib": ["DOM", "ESNext"],
+    "declaration": true,
+    "declarationDir": "./dist",
+    "emitDeclarationOnly": true,
+  }
+}
