@@ -1,5 +1,7 @@
 /src
 /src/test/index.test.ts
+/deno.lock
+/deno.json
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,macos,windows,linux
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,macos,windows,linux
