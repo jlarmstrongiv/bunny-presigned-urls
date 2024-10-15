@@ -1,6 +1,6 @@
 {
   "name": "bunny-presigned-urls",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
   "type": "module",
   "description": "Presigned URLs via Edge Scripting for bunny.net 🐰",
